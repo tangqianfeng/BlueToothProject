@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<integer name="begin_flag">0xff</integer>
+	<integer name="id_high">0x07</integer>
+	<integer name="id_low">0x00</integer>
+	<integer name="datalen_high">0x00</integer>
+</resources>

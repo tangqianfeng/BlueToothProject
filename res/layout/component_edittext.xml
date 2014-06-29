@@ -1,0 +1,7 @@
+<EditText xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools"
+    	android:maxLength="8"
+    	android:digits="0123456789abcdefABCDEF"
+    	android:inputType="text">
+    
+</EditText>

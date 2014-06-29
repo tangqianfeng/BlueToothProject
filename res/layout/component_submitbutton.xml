@@ -1,0 +1,3 @@
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/button_submit"
+/>

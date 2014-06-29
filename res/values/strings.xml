@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">汽车诊断仪</string>
+	<string name="openBlueTooth">打开蓝牙</string>
+	<string name="blueToothIsVisible">蓝牙可见</string>
+	<string name="searchDrives">搜索设备</string>
+	<string name="connectDrives">连接设备</string>
+	<string name="choiceConnectDrives">请选择连接设备</string>
+	<string name="head">可连接的设备</string>
+</resources>

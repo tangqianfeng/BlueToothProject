@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<服务>
+    <server10>
+        <code03 描述="防盗控制器校对成功"></code03>
+    </server10>
+    <server19>
+        <code02>            
+        	<code2C></code2C>
+        </code02>
+    </server19>
+   	<server22></server22>
+    <server27>
+        <code11 描述="安全操作校对成功"></code11>
+        <code12 描述="安全操作密码正确"></code12>
+    </server27>
+    <server2E></server2E>
+    <server2F>
+        <code03></code03>
+    </server2F>
+    <server31>
+        <code01>
+            <code30>
+                <code02 描述="正在学习钥匙，请等待……"></code02>
+            </code30>
+        </code01>
+    </server31>
+    <server3F>
+        <code10 描述="控制器不能诊断（需要打开车门或将点火钥匙打到ON档）" />
+        <code11 描述="服务不支持" />
+        <code12 描述="服务子功能不支持" />
+        <code13 描述="服务长度错误" />
+        <code22 描述="控制器不能诊断（需要打开车门或将点火钥匙打到ON档" />
+        <code24 描述="服务顺序请求错误" />
+        <code31 描述="请求数据超出范围" />
+        <code33 描述="需要安全验证" />
+        <code35 描述="密码错误" />
+        <code36 描述="密码输入次数超过限制，请十分钟后再试" />
+        <code37 描述="等待时间为达到" />
+        <code78 描述="等待" />
+        <code7E 描述="当前模式不支持此服务的子功能" />
+        <code7F 描述="系统超时,请重新连接" />
+    </server3F>
+    <server3E 描述="NOTRET"></server3E>
+</服务>

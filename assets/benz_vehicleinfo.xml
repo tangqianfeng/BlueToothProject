@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<info> 
+  <codeF190 DID描述="VINDataIdentifier 车架号" 字节数="17"> 
+    <line 子数据名称=""> 
+      <数据1 字节范围="0,16" 位范围="all" 单位="" 数据类型="ASCII"/> 
+    </line> 
+  </codeF190>  
+  <codeF200 DID描述="Vehicle Type Configuration 车型" 字节数="1"> 
+    <line 子数据名称=""> 
+      <数据1 字节范围="0,0" 位范围="0,7" 单位="" 换算="01: 1.8T AT旗舰型;02: 1.8T舒适型 ;03: 2.0AT尊贵型;04: 2.0MT舒适型;A: 1.5TAT运动尊贵型/豪华型/1.6AT尊贵型/1.6AT豪华版;B: 1.6AT舒适型;C: 1.6MT尊贵型/豪华天窗版/豪华型;D: 1.6MT舒适型" 数据类型="Unsigned"/> 
+    </line> 
+  </codeF200>  
+  <codeF201 DID描述="Model Configuration 硬件配置信息" 字节数="6"> 
+    <line 子数据名称="LowBeam And HighBeam Type 大灯类型"> 
+      <数据1 字节范围="0,0" 位范围="0,0" 单位="" 换算="0:halogen Lamp;1:xenon Lamp" 数据类型="boolean"/> 
+    </line>  
+    <line 子数据名称="The Min time tor drive LowBeam and HighBeam 大灯驱动最短时间"> 
+      <数据1 字节范围="0,0" 位范围="1,3" 单位="" 换算="0:SW time;1:100ms;2:200ms;3:300ms;4:400ms;5:500ms;6:600ms;7:800ms" 数据类型=""/> 
+    </line>  
+    <line 子数据名称="Driver Door Lock Time 门锁驱动时长"> 
+      <数据1 字节范围="0,0" 位范围="4,7" 单位="" 换算="0:200ms;1:300ms" 数据类型=""/> 
+    </line>  
+    <line 子数据名称="DDCU 主驾车窗防夹模块"> 
+      <数据1 字节范围="1,1" 位范围="0,0" 单位="" 换算="0:not exists;1:exists" 数据类型="boolean"/> 
+    </line>  
+    <line 子数据名称="PDCU 副驾车窗防夹模块"> 
+      <数据1 字节范围="1,1" 位范围="1,1" 单位="" 换算="0:not exists;1:exists" 数据类型="boolean"/> 
+    </line>  
+    <line 子数据名称="RLDCU 左后门车窗防夹模块"> 
+      <数据1 字节范围="1,1" 位范围="2,2" 单位="" 换算="0:not exists;1:exists" 数据类型="boolean"/> 
+    </line>  
+    <line 子数据名称="RRDCU 右后门车窗防夹模块"> 
+      <数据1 字节范围="1,1" 位范围="3,3" 单位="" 换算="0:not exists;1:exists" 数据类型="boolean"/> 
+    </line>  
+    <line 子数据名称="SunroofDCU 天窗防夹模块"> 
+      <数据1 字节范围="1,1" 位范围="4,4" 单位="" 换算="0:not exists;1:exists" 数据类型="boolean"/> 
+    </line>  
+    <line 子数据名称="RainSensor 雨量传感器"> 
+      <数据1 字节范围="1,1" 位范围="5,5" 单位="" 换算="0:not exists;1:exists" 数据类型="boolean"/> 
+    </line>  
+    <line 子数据名称="light sensor 灯光传感器"> 
+      <数据1 字节范围="1,1" 位范围="6,7" 单位="" 换算="0:not exists;1:LIN;2:CAN;3:I/O Input" 数据类型="Unsigned"/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="2,2" 位范围="0,0" 单位="" 数据类型="boolean"/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="2,2" 位范围="1,1" 单位="" 数据类型="boolean"/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="2,2" 位范围="2,2" 单位="" 数据类型="boolean"/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="2,2" 位范围="3,3" 单位="" 数据类型="boolean"/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="2,2" 位范围="4,4" 单位="" 数据类型="boolean"/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="2,2" 位范围="5,5" 单位="" 数据类型=""/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="2,2" 位范围="6,6" 单位="" 数据类型=""/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="2,2" 位范围="7,7" 单位="" 数据类型=""/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="3,3" 位范围="0,0" 单位="" 数据类型="boolean"/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="3,3" 位范围="1,1" 单位="" 数据类型="boolean"/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="3,3" 位范围="2,2" 单位="" 数据类型="boolean"/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="3,3" 位范围="3,3" 单位="" 数据类型="boolean"/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="3,3" 位范围="4,4" 单位="" 数据类型="boolean"/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="3,3" 位范围="5,5" 单位="" 数据类型="boolean"/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="3,3" 位范围="6,6" 单位="" 数据类型=""/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="3,3" 位范围="7,7" 单位="" 数据类型=""/> 
+    </line>  
+    <line 子数据名称="Lamp Wash Control 大灯清洗控制"> 
+      <数据1 字节范围="4,4" 位范围="0,0" 单位="" 换算="0:disable;1:enable" 数据类型="boolean"/> 
+    </line>  
+    <line 子数据名称="Aid RTurn Control 右辅助转向控制"> 
+      <数据1 字节范围="4,4" 位范围="1,1" 单位="" 换算="0:disable;1:enable" 数据类型="boolean"/> 
+    </line>  
+    <line 子数据名称="Aid LTurn Control 左辅助转向控制"> 
+      <数据1 字节范围="4,4" 位范围="2,2" 单位="" 换算="0:disable;1:enable" 数据类型="boolean"/> 
+    </line>  
+    <line 子数据名称="ACC PARK Control  ACC电源备份"> 
+      <数据1 字节范围="4,4" 位范围="3,3" 单位="" 换算="0:disable;1:enable" 数据类型="boolean"/> 
+    </line>  
+    <line 子数据名称="IGN PARK Control  IGN电源备份"> 
+      <数据1 字节范围="4,4" 位范围="4,4" 单位="" 换算="0:disable;1:enable" 数据类型="boolean"/> 
+    </line>  
+    <line 子数据名称="Brake Light Control 刹车灯辅助控制"> 
+      <数据1 字节范围="4,4" 位范围="5,5" 单位="" 换算="0:disable;1:enable" 数据类型="boolean"/> 
+    </line>  
+    <line 子数据名称="Door Light Control 门灯控制"> 
+      <数据1 字节范围="4,4" 位范围="6,6" 单位="" 换算="0:disable;1:enable" 数据类型="boolean"/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="4,4" 位范围="7,7" 单位="" 数据类型=""/> 
+    </line>  
+    <line 子数据名称="Passenger belt warning 副驾驶安全带报警控制"> 
+      <数据1 字节范围="5,5" 位范围="0,0" 单位="" 换算="0:disable;1:enable" 数据类型="boolean"/> 
+    </line>  
+    <line 子数据名称="Driver belt warning 主驾驶安全带报警控制"> 
+      <数据1 字节范围="5,5" 位范围="1,1" 单位="" 换算="0:disable;1:enable" 数据类型="boolean"/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="5,5" 位范围="2,2" 单位="" 数据类型="boolean"/> 
+    </line>  
+    <line 子数据名称="Immo Configuration IMMO配置"> 
+      <数据1 字节范围="5,5" 位范围="3,3" 单位="" 换算="0:IMMO;1:No IMMO" 数据类型="boolean"/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="5,5" 位范围="4,4" 单位="" 数据类型=""/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="5,5" 位范围="5,5" 单位="" 数据类型=""/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="5,5" 位范围="6,6" 单位="" 数据类型=""/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="5,5" 位范围="7,7" 单位="" 数据类型=""/> 
+    </line> 
+  </codeF201>  
+  <codeF202 DID描述="Logic Function Configuration 功能配置信息" 字节数="6"> 
+    <line 子数据名称="Speed Auto Lock 速度自动落锁控制"> 
+      <数据1 字节范围="0,0" 位范围="0,0" 单位="" 换算="0:disable;1:enable;" 数据类型="boolean"/> 
+    </line>  
+    <line 子数据名称="RKE Unlock Door Type  遥控解锁方式"> 
+      <数据1 字节范围="0,0" 位范围="1,1" 单位="" 换算="0: Unlock four door;1:First Unlock Ddoor;" 数据类型="boolean"/> 
+    </line>  
+    <line 子数据名称="When Door Open Key Lock Type 门开机械闭锁方式"> 
+      <数据1 字节范围="0,0" 位范围="2,3" 单位="" 换算="0:No action;1:First lock then unlock;2:Lock;3:Unlock 4Door" 数据类型="boolean"/> 
+    </line>  
+    <line 子数据名称="When Door Open RKE Lock Type 门开遥控闭锁方式"> 
+      <数据1 字节范围="0,0" 位范围="4,5" 单位="" 换算="0:No action;1:First lock then unlock;2:Lock;3:Reserve" 数据类型="boolean"/> 
+    </line>  
+    <line 子数据名称="When Door Open Central Lock Type 门开中控闭锁方式"> 
+      <数据1 字节范围="0,0" 位范围="6,7" 单位="" 换算="0:No action;1:First lock then unlock;2:Lock;3:Reserve" 数据类型="boolean"/> 
+    </line>  
+    <line 子数据名称="Remote Win Close Type 遥控升窗方式"> 
+      <数据1 字节范围="1,1" 位范围="0,1" 单位="" 换算="0:Disable;1:Only Drive Win Auto;2:ALL Win Auto ;3:manual" 数据类型=""/> 
+    </line>  
+    <line 子数据名称="Remote Win Open Type 遥控降窗方式"> 
+      <数据1 字节范围="1,1" 位范围="2,3" 单位="" 换算="0:Disable;1:Only Drive Win Auto;2:ALL Win Auto ;3:manual" 数据类型=""/> 
+    </line>  
+    <line 子数据名称="Win Series Down SW 一键降窗控制"> 
+      <数据1 字节范围="1,1" 位范围="4,4" 单位="" 换算="0:disable;1:enable" 数据类型=""/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="1,1" 位范围="5,5" 单位="" 数据类型=""/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="1,1" 位范围="6,6" 单位="" 数据类型=""/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="1,1" 位范围="7,7" 单位="" 数据类型=""/> 
+    </line>  
+    <line 子数据名称="Horn for Alarm Configuration 防盗喇叭报警方式"> 
+      <数据1 字节范围="2,2" 位范围="0,1" 单位="" 换算="0:disable;1:enable normal mode;2:enable especial mode;3:reserve" 数据类型=""/> 
+    </line>  
+    <line 子数据名称="Horn for Search Car 寻车喇叭提醒"> 
+      <数据1 字节范围="2,2" 位范围="2,2" 单位="" 换算="0:disable;1:enable" 数据类型=""/> 
+    </line>  
+    <line 子数据名称="Horn for Door open RKE lock 门开遥控闭锁喇叭提醒"> 
+      <数据1 字节范围="2,2" 位范围="3,3" 单位="" 换算="0:disable;1:enable" 数据类型=""/> 
+    </line>  
+    <line 子数据名称="Horn for Door open Central lock 门开中控闭锁喇叭提醒"> 
+      <数据1 字节范围="2,2" 位范围="4,4" 单位="" 换算="0:disable;1:enable" 数据类型=""/> 
+    </line>  
+    <line 子数据名称="Horn for Door open Key lock 门开机械闭锁喇叭提醒"> 
+      <数据1 字节范围="2,2" 位范围="5,5" 单位="" 换算="0:disable;1:enable" 数据类型=""/> 
+    </line>  
+    <line 子数据名称="Horn for Anit-pinch 车窗防夹喇叭提醒"> 
+      <数据1 字节范围="2,2" 位范围="6,6" 单位="" 换算="0:disable;1:enable" 数据类型=""/> 
+    </line>  
+    <line 子数据名称="Horn for key in car 钥匙在车内喇叭提醒"> 
+      <数据1 字节范围="2,2" 位范围="7,7" 单位="" 换算="0:disable;1:enable" 数据类型=""/> 
+    </line>  
+    <line 子数据名称="Hazards on Rapid Deceleration 紧急刹车报警控制"> 
+      <数据1 字节范围="3,3" 位范围="0,0" 单位="" 换算="0:disable;1:enable" 数据类型=""/> 
+    </line>  
+    <line 子数据名称="Passenger belt warning below 7km/h 车速小于7千米/每小时副驾驶安全带报警控制"> 
+      <数据1 字节范围="3,3" 位范围="1,1" 单位="" 换算="0:enable;1:disalbe" 数据类型=""/> 
+    </line>  
+    <line 子数据名称="Driver belt warning below 7km/h 车速小于7千米/每小时主驾驶安全带报警控制"> 
+      <数据1 字节范围="3,3" 位范围="2,2" 单位="" 换算="0:enable;1:disalbe" 数据类型=""/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="3,3" 位范围="3,3" 单位="" 数据类型=""/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="3,3" 位范围="4,4" 单位="" 数据类型=""/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="3,3" 位范围="5,5" 单位="" 数据类型=""/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="3,3" 位范围="6,6" 单位="" 数据类型=""/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="3,3" 位范围="7,7" 单位="" 数据类型=""/> 
+    </line>  
+    <line 子数据名称="RKE Unlock Light 遥控解锁灯光控制"> 
+      <数据1 字节范围="4,4" 位范围="0,0" 单位="" 换算="0:disable;1:enable" 数据类型=""/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="4,4" 位范围="1,1" 单位="" 数据类型=""/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="4,4" 位范围="2,2" 单位="" 数据类型=""/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="4,4" 位范围="3,3" 单位="" 数据类型=""/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="4,4" 位范围="4,4" 单位="" 数据类型=""/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="4,4" 位范围="5,5" 单位="" 数据类型=""/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="4,4" 位范围="6,6" 单位="" 数据类型=""/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="4,4" 位范围="7,7" 单位="" 数据类型=""/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="5,5" 位范围="0,0" 单位="" 数据类型=""/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="5,5" 位范围="1,1" 单位="" 数据类型=""/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="5,5" 位范围="2,2" 单位="" 数据类型=""/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="5,5" 位范围="3,3" 单位="" 数据类型=""/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="5,5" 位范围="4,4" 单位="" 数据类型=""/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="5,5" 位范围="5,5" 单位="" 数据类型=""/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="5,5" 位范围="6,6" 单位="" 数据类型=""/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="5,5" 位范围="7,7" 单位="" 数据类型=""/> 
+    </line> 
+  </codeF202>  
+  <codeF203 DID描述="Hazards On Rapid Deceleration 激活紧急刹车报警减速度" 字节数="2"> 
+    <line 子数据名称="Hazards on Rapid Decel G rating for speed band 96KPH to 160KPH 车速在96到160千米/每小激活紧急刹车报警的减速度"> 
+      <数据1 字节范围="0,0" 位范围="0,3" 单位="" 换算="0:0.1G;1:0.15G;2:0.2G;3:0.25G;4:0.3G;5:0.35G;6:0.4G;7:0.45G;8:0.5G;9:0.55G;A:0.6G;B:0.65G;C:0.7G;D:0.75G;E:0.8G;F:0.85G" 数据类型="Unsigned"/> 
+    </line>  
+    <line 子数据名称="Hazards on Rapid Decel G rating for speed band 161KPH to 224KPH 车速大于160千米/每小时激活紧急刹车报警的减速度"> 
+      <数据1 字节范围="0,0" 位范围="4,7" 单位="" 换算="0:0.1G;1:0.15G;2:0.2G;3:0.25G;4:0.3G;5:0.35G;6:0.4G;7:0.45G;8:0.5G;9:0.55G;A:0.6G;B:0.65G;C:0.7G;D:0.75G;E:0.8G;F:0.85G" 数据类型="Unsigned"/> 
+    </line>  
+    <line 子数据名称="Hazard on Rapid Deceleration - Deactivation through increase in vehicle speed 取消紧急刹车的加速度"> 
+      <数据1 字节范围="1,1" 位范围="0,3" 单位="" 换算="value-1" 数据类型="Unsigned"/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="1,1" 位范围="4,7" 单位="" 数据类型=""/> 
+    </line> 
+  </codeF203>  
+  <codeF204 DID描述="Turn light Flash times Configuration 转向灯提醒参数" 字节数="2"> 
+    <line 子数据名称="Turn Light Flashing times for Search Car Timers 寻车转向灯闪烁时长"> 
+      <数据1 字节范围="0,0" 位范围="0,1" 单位="" 换算="0:reserve;1:10s;2:25s;3:reserve" 数据类型="Unsigned"/> 
+    </line>  
+    <line 子数据名称="Turn Light Flashing times for Exit Active Arm  退出防盗激活转向灯闪烁次数"> 
+      <数据1 字节范围="0,0" 位范围="2,3" 单位="" 换算="0:reserve;1:4 times;2-3:reserve" 数据类型="Unsigned"/> 
+    </line>  
+    <line 子数据名称="Turn Light Flashing times for key low bat 电池电量低山所次数"> 
+      <数据1 字节范围="0,0" 位范围="4,5" 单位="" 换算="0:reserve;1:9 times;2-3:reserve" 数据类型="Unsigned"/> 
+    </line>  
+    <line 子数据名称="Turn Light Flashing times for Arm Active 防盗激活转向灯闪烁次数"> 
+      <数据1 字节范围="0,0" 位范围="6,7" 单位="" 换算="0:reserve;1:5 min;2-3:reserve" 数据类型="Unsigned"/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="1,1" 位范围="0,7" 单位="" 数据类型=""/> 
+    </line> 
+  </codeF204>  
+  <codeF205 DID描述="Horn sound times Configuration 喇叭提醒参数" 字节数="6"> 
+    <line 子数据名称="Horn sound Timers for win anutpinch 车窗防夹喇叭提醒次数"> 
+      <数据1 字节范围="0,0" 位范围="0,1" 单位="" 换算="0:1 times;1:reserve;2-3:reserve" 数据类型="Unsigned"/> 
+    </line>  
+    <line 子数据名称="Horn sound Timers for serch car 寻车喇叭提醒次数"> 
+      <数据1 字节范围="0,0" 位范围="2,3" 单位="" 换算="0:2 times;1:reserve;2-3:reserve" 数据类型="Unsigned"/> 
+    </line>  
+    <line 子数据名称="Horn sound Timers for Arm Active 防盗激活喇叭提醒次数"> 
+      <数据1 字节范围="0,0" 位范围="4,5" 单位="" 换算="0:28 times;1:reserve;2-3:reserve" 数据类型="Unsigned"/> 
+    </line>  
+    <line 子数据名称="Horn sound Timers for Door open lock 门开闭锁喇叭提醒次数"> 
+      <数据1 字节范围="0,0" 位范围="6,6" 单位="" 换算="0:1 times;1:reserve" 数据类型="Unsigned"/> 
+    </line>  
+    <line 子数据名称="Horn sound Timers for KEY In Car 钥匙在车内喇叭提醒次数"> 
+      <数据1 字节范围="0,0" 位范围="7,7" 单位="" 换算="0:1 times;1:reserve" 数据类型="Unsigned"/> 
+    </line>  
+    <line 子数据名称="Horn sound Timers for win anutpinch Duty 防夹喇叭提醒占空比"> 
+      <数据1 字节范围="1,1" 位范围="0,3" 单位="" 换算="0:40ms;1:20ms;2:40ms;3:60ms;4:80ms;5:100ms;6:120ms;7:140ms;8:160ms;9:180ms;A:200ms;B:220ms;C:240ms;D:260ms;E:280ms;F:300ms" 数据类型="Unsigned"/> 
+    </line>  
+    <line 子数据名称="Horn sound Timers for win anutpinch Period 防夹喇叭提醒周期"> 
+      <数据1 字节范围="1,1" 位范围="4,7" 单位="" 换算="0:40ms;1:40ms;2:80ms;3:120ms;4:160ms;5:200ms;6:240ms;7:280ms;8:320ms;9:360ms;A:400ms;B:440ms;C:480ms;D:520ms;E:560ms;F:600ms" 数据类型="Unsigned"/> 
+    </line>  
+    <line 子数据名称="Horn sound Timers for win serch car Duty 寻车喇叭提醒占空比"> 
+      <数据1 字节范围="2,2" 位范围="0,3" 单位="" 换算="0:40ms;1:40ms;2:80ms;3:120ms;4:160ms;5:200ms;6:240ms;7:280ms;8:320ms;9:360ms;A:400ms;B:440ms;C:480ms;D:520ms;E:560ms;F:600ms" 数据类型="Unsigned"/> 
+    </line>  
+    <line 子数据名称="Horn sound Timers for win serch car Period 寻车喇叭提醒周期"> 
+      <数据1 字节范围="2,2" 位范围="4,7" 单位="" 换算="0:40ms;1:100ms;2:200ms;3:300ms;4:400ms;5:500ms;6:600ms;7:700ms;8:800ms;9:900ms;A:1000ms;B:1100ms;C:1200ms;D:1300ms;E:1400ms;F:1500ms" 数据类型="Unsigned"/> 
+    </line>  
+    <line 子数据名称="Horn sound Timers for win Arm Active Duty 防盗激活喇叭报警占空比"> 
+      <数据1 字节范围="3,3" 位范围="0,3" 单位="" 换算="0:250ms;1:50ms;2:100ms;3:150ms;4:200ms;5:250ms;6:300ms;7:350ms;8:400ms;9:450ms;A:500ms;B:550ms;C:600ms;D:650ms;E:700ms;F:750ms" 数据类型="Unsigned"/> 
+    </line>  
+    <line 子数据名称="Horn sound Timers for win Arm Active Period 防盗激活喇叭报警周期"> 
+      <数据1 字节范围="3,3" 位范围="4,7" 单位="" 换算="0:250ms;1:100ms;2:200ms;3:300ms;4:400ms;5:500ms;6:600ms;7:700ms;8:800ms;9:900ms;A:1000ms;B:1100ms;C:1200ms;D:1300ms;E:1400ms;F:1500ms" 数据类型="Unsigned"/> 
+    </line>  
+    <line 子数据名称="Horn sound Timers for win Door open lock Duty 门开闭锁喇叭提醒占空比"> 
+      <数据1 字节范围="4,4" 位范围="0,3" 单位="" 换算="0:40ms;1:20ms;2:40ms;3:60ms;4:80ms;5:100ms;6:120ms;7:140ms;8:160ms;9:180ms;A:200ms;B:220ms;C:240ms;D:260ms;E:280ms;F:300ms" 数据类型="Unsigned"/> 
+    </line>  
+    <line 子数据名称="Horn sound Timers for win  Door open lockPeriod 门开闭锁喇叭提醒周期"> 
+      <数据1 字节范围="4,4" 位范围="4,7" 单位="" 换算="0:40ms;1:40ms;2:80ms;3:120ms;4:160ms;5:200ms;6:240ms;7:280ms;8:320ms;9:360ms;A:400ms;B:440ms;C:480ms;D:520ms;E:560ms;F:600ms" 数据类型="Unsigned"/> 
+    </line>  
+    <line 子数据名称="Horn sound Timers for win KEY In Car Duty 钥匙在车内喇叭提醒占空比"> 
+      <数据1 字节范围="5,5" 位范围="0,3" 单位="" 换算="0:40ms;1:20ms;2:40ms;3:60ms;4:80ms;5:100ms;6:120ms;7:140ms;8:160ms;9:180ms;A:200ms;B:220ms;C:240ms;D:260ms;E:280ms;F:300ms" 数据类型="Unsigned"/> 
+    </line>  
+    <line 子数据名称="Horn sound Timers for win KEY In Car Period 钥匙在车内喇叭提醒周期"> 
+      <数据1 字节范围="5,5" 位范围="4,7" 单位="" 换算="0:40ms;1:40ms;2:80ms;3:120ms;4:160ms;5:200ms;6:240ms;7:280ms;8:320ms;9:360ms;A:400ms;B:440ms;C:480ms;D:520ms;E:560ms;F:600ms" 数据类型="Unsigned"/> 
+    </line> 
+  </codeF205>  
+  <codeF206 DID描述="Buzzer warn times Configuration 蜂鸣器提醒参数" 字节数="2"> 
+    <line 子数据名称="Buzzer warn times for door open RKE lock 门开遥控闭锁蜂鸣器提醒时长"> 
+      <数据1 字节范围="0,0" 位范围="0,1" 单位="" 换算="0:reserve;1:10s;2:3s;3:reserve" 数据类型=""/> 
+    </line>  
+    <line 子数据名称="Buzzer warn times for RKE low battery 钥匙电池电量低蜂鸣器提醒时长"> 
+      <数据1 字节范围="0,0" 位范围="2,3" 单位="" 换算="0-3:reserve" 数据类型=""/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="0,0" 位范围="4,7" 单位="" 数据类型=""/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="1,1" 位范围="," 单位="" 数据类型=""/> 
+    </line> 
+  </codeF206>  
+  <codeF207 DID描述="CAN Network Configuration CAN网络参数" 字节数="3"> 
+    <line 子数据名称="CAN Network architecture CAN网络架构"> 
+      <数据1 字节范围="0,0" 位范围="0,2" 单位="" 换算="0:reserve;1:V3;2:V4;3-7:reserve" 数据类型=""/> 
+    </line>  
+    <line 子数据名称="CAN Baudrate CAN波特率"> 
+      <数据1 字节范围="0,0" 位范围="3,5" 单位="" 换算="0:reserve;1:125kBd;2:500kBd;3-7:reserve" 数据类型=""/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="0,0" 位范围="6,6" 单位="" 数据类型=""/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="0,0" 位范围="7,7" 单位="" 数据类型=""/> 
+    </line>  
+    <line 子数据名称="PEPS PEPS节点"> 
+      <数据1 字节范围="1,1" 位范围="0,0" 单位="" 换算="0:not receive;1:receive" 数据类型=""/> 
+    </line>  
+    <line 子数据名称="AC AC节点"> 
+      <数据1 字节范围="1,1" 位范围="1,1" 单位="" 换算="0:not receive;1:receive" 数据类型=""/> 
+    </line>  
+    <line 子数据名称="IP_2B0 IP_2B0节点"> 
+      <数据1 字节范围="1,1" 位范围="2,2" 单位="" 换算="0:not receive;1:receive" 数据类型=""/> 
+    </line>  
+    <line 子数据名称="IP_270 IP_270节点"> 
+      <数据1 字节范围="1,1" 位范围="3,3" 单位="" 换算="0:not receive;1:receive" 数据类型=""/> 
+    </line>  
+    <line 子数据名称="IP_320 IP_320节点"> 
+      <数据1 字节范围="1,1" 位范围="4,4" 单位="" 换算="0:not receive;1:receive" 数据类型=""/> 
+    </line>  
+    <line 子数据名称="EMS_255 EMS_255节点"> 
+      <数据1 字节范围="1,1" 位范围="5,5" 单位="" 换算="0:not receive;1:receive" 数据类型=""/> 
+    </line>  
+    <line 子数据名称="EMS_275 EMS_275节点"> 
+      <数据1 字节范围="1,1" 位范围="6,6" 单位="" 换算="0:not receive;1:receive" 数据类型=""/> 
+    </line>  
+    <line 子数据名称="TCU_268 TCU_268节点"> 
+      <数据1 字节范围="1,1" 位范围="7,7" 单位="" 换算="0:not receive;1:receive" 数据类型=""/> 
+    </line>  
+    <line 子数据名称="ESP/ABS_218 ESP/ABS_218节点"> 
+      <数据1 字节范围="2,2" 位范围="0,0" 单位="" 换算="0:not receive;1:receive" 数据类型=""/> 
+    </line>  
+    <line 子数据名称="SRS_050 SRS_050节点"> 
+      <数据1 字节范围="2,2" 位范围="1,1" 单位="" 换算="0:not receive;1:receive" 数据类型=""/> 
+    </line>  
+    <line 子数据名称="EPB_256 EPB_256节点"> 
+      <数据1 字节范围="2,2" 位范围="2,2" 单位="" 换算="0:not receive;1:receive" 数据类型=""/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="2,2" 位范围="3,3" 单位="" 数据类型=""/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="2,2" 位范围="4,4" 单位="" 数据类型=""/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="2,2" 位范围="5,5" 单位="" 数据类型=""/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="2,2" 位范围="6,6" 单位="" 数据类型=""/> 
+    </line>  
+    <line 子数据名称=""> 
+      <数据1 字节范围="2,2" 位范围="7,7" 单位="" 数据类型=""/> 
+    </line> 
+  </codeF207>  
+  <codeF210 DID描述="Last 4 Alarm Trigger Events 最近四次触发防盗的事件" 字节数="4"> 
+    <line 子数据名称="Most Recent Trigger 最近一次触发防盗事件"> 
+      <数据1 字节范围="0,0" 位范围="0,7" 单位="" 换算="0:No Event;1:Back door ajar;2:right rear door ajar (passenger's side);3:left rear door ajar (driver's side);4:passenger's door ajar;5:driver's door ajar;6:engine contact ajar;7:power state change;8-F:reserve;" 数据类型="Unsigned"/> 
+    </line>  
+    <line 子数据名称="Next Most Recent Trigger 倒数第二次触发防盗事件"> 
+      <数据1 字节范围="1,1" 位范围="0,7" 单位="" 换算="00:No Event;01:Back door ajar;02:right rear door ajar (passenger's side);03:left rear door ajar (driver's side);04:passenger's door ajar;05:driver's door ajar;06:engine contact ajar;07:power state change;08-F:reserve;" 数据类型="Unsigned"/> 
+    </line>  
+    <line 子数据名称="Third Most Recent Trigger 倒数第三次触发防盗事件"> 
+      <数据1 字节范围="2,2" 位范围="0,7" 单位="" 换算="0:No Event;1:Back door ajar;2:right rear door ajar (passenger's side);3:left rear door ajar (driver's side);4:passenger's door ajar;5:driver's door ajar;6:engine contact ajar;7:power state change;8-F:reserve;" 数据类型="Unsigned"/> 
+    </line>  
+    <line 子数据名称="4th Most Recent Trigger 倒数第四次触发防盗事件"> 
+      <数据1 字节范围="3,3" 位范围="0,7" 单位="" 换算="0:No Event;1:Back door ajar;2:right rear door ajar (passenger's side);3:left rear door ajar (driver's side);4:passenger's door ajar;5:driver's door ajar;6:engine contact ajar;7:power state change;8-F:reserve;" 数据类型="Unsigned"/> 
+    </line> 
+  </codeF210>  
+  <codeF211 DID描述="Alarm State Present 防盗状态" 字节数="1"> 
+    <line 子数据名称="save Alarm State Present 防盗状态记录"> 
+      <数据1 字节范围="0,0" 位范围="0,7" 单位="" 换算="0:default;1:exit arm state;2:Arm State;3:Arm active" 数据类型="Unsigned"/> 
+    </line> 
+  </codeF211>  
+  <codeF212 DID描述="key number 遥控钥匙数量" 字节数="1"> 
+    <line 子数据名称="save key number 遥控钥匙数量"> 
+      <数据1 字节范围="0,0" 位范围="0,7" 单位="" 数据类型="Unsigned"/> 
+    </line> 
+  </codeF212> 
+</info>

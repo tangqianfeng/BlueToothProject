@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="utf-8"?>
+<主界面> 
+  <诊断系统> 
+    <奔驰> 
+      <防盗控制器 type="等待阻塞" checkdata="10,03" heartbeatblood="3e,00" controlID="07,00"> 
+        <基本信息 type="固定数据项" url="benz_basicinfo.xml"> 
+          <senddata data1="22,F1,87" data2="22,F1,8A" data3="22,F1,8C" data4="22,F1,93" data5="22,F1,95"/> 
+        </基本信息>  
+        <车辆信息 url="benz_vehicleinfo.xml"> 
+          <车架号 type="固定数据项"> 
+            <senddata data="22,F1,90"/> 
+          </车架号>  
+          <车型 type="固定数据项"> 
+            <senddata data="22,F2,00"/> 
+          </车型>  
+          <硬件配置信息 type="固定数据项"> 
+            <senddata data="22,F2,01"/> 
+          </硬件配置信息>  
+          <功能配置信息 type="固定数据项"> 
+            <senddata data="22,F2,02"/> 
+          </功能配置信息>  
+          <激活紧急刹车报警减速度 type="固定数据项"> 
+            <senddata data="22,F2,03"/> 
+          </激活紧急刹车报警减速度>  
+          <转向灯提醒参数 type="固定数据项"> 
+            <senddata data="22,F2,04"/> 
+          </转向灯提醒参数>  
+          <喇叭提醒参数 type="固定数据项"> 
+            <senddata data="22,F2,05"/> 
+          </喇叭提醒参数>  
+          <蜂鸣器提醒参数 type="固定数据项"> 
+            <senddata data="22,F2,06"/> 
+          </蜂鸣器提醒参数>  
+          <CAN网络参数 type="固定数据项"> 
+            <senddata data="22,F2,07"/> 
+          </CAN网络参数>  
+          <最近四次触发防盗事件 type="固定数据项"> 
+            <senddata data="22,F2,10"/> 
+          </最近四次触发防盗事件>  
+          <防盗状态 type="固定数据项"> 
+            <senddata data="22,F2,11"/> 
+          </防盗状态>  
+          <遥控钥匙数量 type="固定数据项"> 
+            <senddata data="22,F2,12"/> 
+          </遥控钥匙数量> 
+        </车辆信息>  
+        <故障码 url="benz_faultcode.xml"> 
+          <当前故障 type="固定数据项"> 
+            <senddata data="19,02,08"/> 
+          </当前故障>  
+          <历史故障 type="固定数据项"> 
+            <senddata data="19,02,20"/> 
+          </历史故障> 
+        </故障码>  
+        <车辆检测 url="benz_vehicledet.xml"> 
+          <读取所有数字开关状态 type="固定数据项"> 
+            <senddata data="22,f0,01"/> 
+          </读取所有数字开关状态>  
+          <读取其他开关状态 type="固定数据项"> 
+            <senddata data="22,f0,02"/> 
+          </读取其他开关状态>  
+          <读取输出状态 type="固定数据项"> 
+            <senddata data="22,f0,03"/> 
+          </读取输出状态>  
+          <模拟所有数字开关 type="自选项" datalength="12" control="true" service="2f,f0,01,03" matchState="22,f0,01"> 
+            <行李箱释放开关 byte="0" bit="0" param="开关钮"/>  
+            <驾驶员门解锁状态开关 byte="0" bit="1" param="开关钮"/>  
+            <驾驶员门闭锁状态开关 byte="0" bit="3" param="开关钮"/>  
+            <超车灯光开关 byte="0" bit="4" param="开关钮"/>  
+            <碰撞信号开关 byte="0" bit="5" param="开关钮"/>  
+            <大灯清洗开关 byte="0" bit="6" param="开关钮"/>  
+            <后除霜开关 byte="0" bit="7" param="开关钮"/>  
+            <IGN电源 byte="1" bit="0" param="开关钮"/>  
+            <近光灯开关 byte="1" bit="4" param="开关钮"/>  
+            <灯光传感器信号 byte="1" bit="5" param="开关钮"/>  
+            <前雨刮回位信号 byte="1" bit="7" param="开关钮"/>  
+            <左前门状态开关 byte="2" bit="0" param="开关钮"/>  
+            <右前门状态开关 byte="2" bit="1" param="开关钮"/>  
+            <左右门状态开关 byte="2" bit="2" param="开关钮"/>  
+            <右右门状态开关 byte="2" bit="3" param="开关钮"/>  
+            <行李箱门状态开关 byte="2" bit="4" param="开关钮"/>  
+            <位置灯开关 byte="2" bit="5" param="开关钮"/>  
+            <紧急报警开关 byte="2" bit="6" param="开关钮"/>  
+            <引擎接触开关 byte="2" bit="7" param="开关钮"/>  
+            <前洗涤开关 byte="3" bit="0" param="开关钮"/>  
+            <前雨刮低速开关 byte="3" bit="1" param="开关钮"/>  
+            <后雨刮间歇开关 byte="3" bit="2" param="开关钮"/>  
+            <前雨刮高速开关 byte="3" bit="3" param="开关钮"/>  
+            <ACC电源 byte="3" bit="4" param="开关钮"/>  
+            <后雨刮洗涤开关 byte="3" bit="5" param="开关钮"/>  
+            <前雨刮间歇开关 byte="3" bit="6" param="开关钮"/>  
+            <钥匙未拔信号开关 byte="3" bit="7" param="开关钮"/>  
+            <右转向灯开关 byte="4" bit="0" param="开关钮"/>  
+            <远光灯开关 byte="4" bit="1" param="开关钮"/>  
+            <前雾灯开关 byte="4" bit="3" param="开关钮"/>  
+            <后雾灯开关 byte="4" bit="4" param="开关钮"/>  
+            <自动灯光开关 byte="4" bit="5" param="开关钮"/>  
+            <后雨刮回位信号 byte="4" bit="6" param="开关钮"/>  
+            <左转向灯开关 byte="4" bit="7" param="开关钮"/> 
+          </模拟所有数字开关>  
+          <模拟其他开关 type="自选项" datalength="12" control="true" service="2f,f0,02,03" matchState="22,f0,02"> 
+            <中控锁开关 byte="0" startbit="0" endbit="7" param="下拉单"> 
+              <a name="无效" value="0"/>  
+              <b name="解锁" value="1"/>  
+              <c name="闭锁" value="2"/> 
+            </中控锁开关>  
+            <前雨刮间歇时间 byte="1" startbit="0" endbit="7" param="下拉单"> 
+              <a name="无效" value="0"/>  
+              <b name="1s" value="1"/>  
+              <c name="3.5s" value="2"/>  
+              <d name="6s" value="3"/>  
+              <e name="9.5s" value="4"/>  
+              <f name="15.5s" value="5"/>  
+              <g name="22s" value="6"/> 
+            </前雨刮间歇时间>  
+            <左前窗开关 byte="2" startbit="0" endbit="7" param="下拉单"> 
+              <a name="无效" value="0"/>  
+              <b name="左前车窗下降" value="1"/>  
+              <c name="左前车窗上升" value="2"/> 
+            </左前窗开关>  
+            <右前窗开关 byte="3" startbit="0" endbit="7" param="下拉单"> 
+              <a name="无效" value="0"/>  
+              <b name="右前车窗下降" value="1"/>  
+              <c name="右前车窗上升" value="2"/> 
+            </右前窗开关>  
+            <左后窗开关 byte="4" startbit="0" endbit="7" param="下拉单"> 
+              <a name="无效" value="0"/>  
+              <b name="左后车窗下降" value="1"/>  
+              <c name="左后车窗上升" value="2"/> 
+            </左后窗开关>  
+            <右后窗开关 byte="5" startbit="0" endbit="7" param="下拉单"> 
+              <a name="无效" value="0"/>  
+              <b name="右后车窗下降" value="1"/>  
+              <c name="右后车窗上升" value="2"/> 
+            </右后窗开关> 
+          </模拟其他开关>  
+          <控制输出 type="自选项" datalength="12" control="true" service="2f,f0,03,03" matchState="22,f0,03"> 
+            <前雨刮高速输出 byte="0" bit="0" param="开关钮"/>  
+            <门锁电机解锁 byte="0" bit="1" param="开关钮"/>  
+            <驾驶员门解锁 byte="0" bit="2" param="开关钮"/>  
+            <后雨刮低速输出 byte="0" bit="3" param="开关钮"/>  
+            <前雨刮低速输出 byte="0" bit="4" param="开关钮"/>  
+            <右转向灯 byte="0" bit="5" param="开关钮"/>  
+            <左转向灯 byte="0" bit="6" param="开关钮"/>  
+            <防盗喇叭 byte="0" bit="7" param="开关钮"/>  
+            <大灯清洗继电器 byte="1" bit="0" param="开关钮"/>  
+            <后除霜继电器 byte="1" bit="1" param="开关钮"/>  
+            <位置灯 byte="1" bit="2" param="开关钮"/>  
+            <后雾灯 byte="1" bit="3" param="开关钮"/>  
+            <前雾灯 byte="1" bit="4" param="开关钮"/>  
+            <近光灯 byte="1" bit="5" param="开关钮"/>  
+            <远光灯 byte="1" bit="6" param="开关钮"/>  
+            <节能输出 byte="1" bit="7" param="开关钮"/>  
+            <ACC电源备份输出 byte="2" bit="0" param="开关钮"/>  
+            <IGN电源备份输出 byte="2" bit="1" param="开关钮"/>  
+            <驾驶员门闭锁输出 byte="2" bit="2" param="开关钮"/>  
+            <行李箱解锁输出 byte="2" bit="3" param="开关钮"/>  
+            <防盗指示灯 byte="2" bit="4" param="开关钮"/>  
+            <转向声音继电器 byte="2" bit="5" param="开关钮"/>  
+            <右辅助转向灯 byte="2" bit="6" param="开关钮"/>  
+            <左辅助转向灯 byte="2" bit="7" param="开关钮"/>  
+            <左前车窗下降继电器 byte="3" bit="0" param="开关钮"/>  
+            <左前车窗上升继电器 byte="3" bit="1" param="开关钮"/>  
+            <右前车窗下降继电器 byte="3" bit="2" param="开关钮"/>  
+            <右前车窗上升继电器 byte="3" bit="3" param="开关钮"/>  
+            <左后车窗下降继电器 byte="3" bit="4" param="开关钮"/>  
+            <左后车窗上升继电器 byte="3" bit="5" param="开关钮"/>  
+            <右后车窗下降继电器 byte="3" bit="6" param="开关钮"/>  
+            <右后车窗上升继电器 byte="3" bit="7" param="开关钮"/>  
+            <顶灯输出 byte="4" startbit="0" endbit="1" param="下拉单"> 
+              <a name="无效" value="0"/>  
+              <b name="顶灯渐亮" value="1"/>  
+              <c name="顶灯渐灭" value="2"/>  
+              <d name="顶灯常亮" value="3"/> 
+            </顶灯输出>  
+            <主驾门灯输出 byte="4" bit="2" param="开关钮"/>  
+            <副驾门灯输出 byte="4" bit="3" param="开关钮"/>  
+            <左后门灯输出 byte="4" bit="4" param="开关钮"/>  
+            <右后门灯输出 byte="4" bit="5" param="开关钮"/>  
+            <刹车灯输出 byte="4" bit="6" param="开关钮"/> 
+          </控制输出> 
+        </车辆检测>  
+        <安全操作 type="等待阻塞oo自选数据" checkdata="27,11" passwordservice="27,12"> 
+          <遥控钥匙学习 type="定时阻塞" blocktime="10000" url="benz_vehicleinfo.xml"> 
+            <senddata data1="31,01,30,02"/>  
+            <waitsend data2="22,F2,12"/> 
+          </遥控钥匙学习>  
+          <车辆配置 url="benz_vehicleinfo.xml"> 
+            <车型 type="自选项" datalength="1" control="false" service="2e,f2,00" matchState="22,F2,00"> 
+              <车型 byte="0" startbit="0" endbit="7" param="下拉单"> 
+                <a name="AT旗舰型1.8T" value="1"/>  
+                <b name="舒适型1.8T" value="2"/>  
+                <c name="尊贵型2.0AT" value="3"/>  
+                <d name="舒适型2.0MT" value="4"/>  
+                <e name="运动尊贵型1.5TAT-豪华型-1.6AT尊贵型-1.6AT豪华版" value="10"/>  
+                <f name="舒适型1.6AT" value="11"/>  
+                <j name="尊贵型-豪华天窗版-豪华型1.6MT" value="12"/>  
+                <h name="舒适型1.6MT" value="13"/> 
+              </车型> 
+            </车型>  
+            <硬件配置信息 type="自选项" datalength="6" control="false" service="2e,f2,01" matchState="22,F2,01"> 
+              <大灯类型 byte="0" startbit="0" endbit="0" param="下拉单"> 
+                <a name="halogen Lamp" value="0"/>  
+                <b name="xenon Lamp" value="1"/> 
+              </大灯类型>  
+              <大灯驱动最短时间 byte="0" startbit="1" endbit="3" param="下拉单"> 
+                <a name="sw time" value="0"/>  
+                <b name="100ms" value="1"/>  
+                <c name="200ms" value="2"/>  
+                <d name="300ms" value="3"/>  
+                <e name="400ms" value="4"/>  
+                <f name="500ms" value="5"/>  
+                <j name="600ms" value="6"/>  
+                <h name="800ms" value="7"/> 
+              </大灯驱动最短时间>  
+              <门锁驱动时长 byte="0" startbit="4" endbit="7" param="下拉单"> 
+                <a name="200ms" value="0"/>  
+                <b name="300ms" value="1"/> 
+              </门锁驱动时长>  
+              <主驾车窗防夹模块 byte="1" startbit="0" endbit="0" param="下拉单"> 
+                <a name="not exists" value="0"/>  
+                <b name="exists" value="1"/> 
+              </主驾车窗防夹模块>  
+              <副驾车窗防夹模块 byte="1" startbit="1" endbit="1" param="下拉单"> 
+                <a name="not exists" value="0"/>  
+                <b name="exists" value="1"/> 
+              </副驾车窗防夹模块>  
+              <左后门车窗防夹模块 byte="1" startbit="2" endbit="2" param="下拉单"> 
+                <a name="not exists" value="0"/>  
+                <b name="exists" value="1"/> 
+              </左后门车窗防夹模块>  
+              <右后门车窗防夹模块 byte="1" startbit="3" endbit="3" param="下拉单"> 
+                <a name="not exists" value="0"/>  
+                <b name="exists" value="1"/> 
+              </右后门车窗防夹模块>  
+              <天窗防夹模块 byte="1" startbit="4" endbit="4" param="下拉单"> 
+                <a name="not exists" value="0"/>  
+                <b name="exists" value="1"/> 
+              </天窗防夹模块>  
+              <雨量传感器 byte="1" startbit="5" endbit="5" param="下拉单"> 
+                <a name="not exists" value="0"/>  
+                <b name="exists" value="1"/> 
+              </雨量传感器>  
+              <灯光传感器 byte="1" startbit="6" endbit="7" param="下拉单"> 
+                <a name="not exists" value="0"/>  
+                <b name="LIN" value="1"/>  
+                <c name="CAN" value="2"/>  
+                <d name="I/O Input" value="3"/> 
+              </灯光传感器>  
+              <大灯清洗控制 byte="4" startbit="0" endbit="0" param="下拉单"> 
+                <a name="disable" value="0"/>  
+                <b name="enable" value="1"/> 
+              </大灯清洗控制>  
+              <右辅助转向控制 byte="4" startbit="1" endbit="1" param="下拉单"> 
+                <a name="disable" value="0"/>  
+                <b name="enable" value="1"/> 
+              </右辅助转向控制>  
+              <左辅助转向控制 byte="4" startbit="2" endbit="2" param="下拉单"> 
+                <a name="disable" value="0"/>  
+                <b name="enable" value="1"/> 
+              </左辅助转向控制>  
+              <ACC电源备份 byte="4" startbit="3" endbit="3" param="下拉单"> 
+                <a name="disable" value="0"/>  
+                <b name="enable" value="1"/> 
+              </ACC电源备份>  
+              <IGN电源备份 byte="4" startbit="4" endbit="4" param="下拉单"> 
+                <a name="disable" value="0"/>  
+                <b name="enable" value="1"/> 
+              </IGN电源备份>  
+              <刹车灯辅助控制 byte="4" startbit="5" endbit="5" param="下拉单"> 
+                <a name="disable" value="0"/>  
+                <b name="enable" value="1"/> 
+              </刹车灯辅助控制>  
+              <门灯控制 byte="4" startbit="6" endbit="6" param="下拉单"> 
+                <a name="disable" value="0"/>  
+                <b name="enable" value="1"/> 
+              </门灯控制>  
+              <副驾驶安全带报警控制 byte="5" startbit="0" endbit="0" param="下拉单"> 
+                <a name="disable" value="0"/>  
+                <b name="enable" value="1"/> 
+              </副驾驶安全带报警控制>  
+              <主驾驶安全带报警控制 byte="5" startbit="1" endbit="1" param="下拉单"> 
+                <a name="disable" value="0"/>  
+                <b name="enable" value="1"/> 
+              </主驾驶安全带报警控制>  
+              <主驾驶安全带报警控制 byte="5" startbit="3" endbit="3" param="下拉单"> 
+                <a name="IMMO" value="0"/>  
+                <b name="No IMMO" value="1"/> 
+              </主驾驶安全带报警控制> 
+            </硬件配置信息>  
+            <功能配置信息 type="自选项" datalength="6" control="false" service="2e,f2,02" matchState="22,F2,02"> 
+              <速度自动落锁控制 byte="0" startbit="0" endbit="0" param="下拉单"> 
+                <a name="disable" value="0"/>  
+                <b name="enable" value="1"/> 
+              </速度自动落锁控制>  
+              <遥控解锁方式 byte="0" startbit="1" endbit="1" param="下拉单"> 
+                <a name="disable" value="0"/>  
+                <b name="enable" value="1"/> 
+              </遥控解锁方式>  
+              <门开机械闭锁方式 byte="0" startbit="2" endbit="3" param="下拉单"> 
+                <a name="No action" value="0"/>  
+                <b name="First lock then unlock" value="1"/>  
+                <c name="Lock" value="2"/>  
+                <d name="Unlock 4Door" value="3"/> 
+              </门开机械闭锁方式>  
+              <门开遥控闭锁方式 byte="0" startbit="4" endbit="5" param="下拉单"> 
+                <a name="No action" value="0"/>  
+                <b name="First lock then unlock" value="1"/>  
+                <c name="Lock" value="2"/>  
+                <d name="Reserve" value="3"/> 
+              </门开遥控闭锁方式>  
+              <门开中控闭锁方式 byte="0" startbit="6" endbit="7" param="下拉单"> 
+                <a name="No action" value="0"/>  
+                <b name="First lock then unlock" value="1"/>  
+                <c name="Lock" value="2"/>  
+                <d name="Reserve" value="3"/> 
+              </门开中控闭锁方式>  
+              <遥控升窗方式 byte="1" startbit="0" endbit="1" param="下拉单"> 
+                <a name="Disable" value="0"/>  
+                <b name="Only Drive Win Auto" value="1"/>  
+                <c name="ALL Win Auto" value="2"/>  
+                <d name="manual" value="3"/> 
+              </遥控升窗方式>  
+              <遥控降窗方式 byte="1" startbit="2" endbit="3" param="下拉单"> 
+                <a name="Disable" value="0"/>  
+                <b name="Only Drive Win Auto" value="1"/>  
+                <c name="ALL Win Auto" value="2"/>  
+                <d name="manual" value="3"/> 
+              </遥控降窗方式>  
+              <一键降窗控制 byte="1" startbit="4" endbit="4" param="下拉单"> 
+                <a name="disable" value="0"/>  
+                <b name="enable" value="1"/> 
+              </一键降窗控制>  
+              <防盗喇叭报警方式 byte="2" startbit="0" endbit="1" param="下拉单"> 
+                <a name="disable" value="0"/>  
+                <b name="enable normal mode" value="1"/>  
+                <c name="enable especial mode" value="2"/>  
+                <d name="reserve" value="3"/> 
+              </防盗喇叭报警方式>  
+              <寻车喇叭提醒 byte="2" startbit="2" endbit="2" param="下拉单"> 
+                <a name="disable" value="0"/>  
+                <b name="enable" value="1"/> 
+              </寻车喇叭提醒>  
+              <门开遥控闭锁喇叭提醒 byte="2" startbit="3" endbit="3" param="下拉单"> 
+                <a name="disable" value="0"/>  
+                <b name="enable" value="1"/> 
+              </门开遥控闭锁喇叭提醒>  
+              <门开中控闭锁喇叭提醒 byte="2" startbit="4" endbit="4" param="下拉单"> 
+                <a name="disable" value="0"/>  
+                <b name="enable" value="1"/> 
+              </门开中控闭锁喇叭提醒>  
+              <门开机械闭锁喇叭提醒 byte="2" startbit="5" endbit="5" param="下拉单"> 
+                <a name="disable" value="0"/>  
+                <b name="enable" value="1"/> 
+              </门开机械闭锁喇叭提醒>  
+              <车窗防夹喇叭提醒 byte="2" startbit="6" endbit="6" param="下拉单"> 
+                <a name="disable" value="0"/>  
+                <b name="enable" value="1"/> 
+              </车窗防夹喇叭提醒>  
+              <钥匙在车内喇叭提醒 byte="2" startbit="7" endbit="7" param="下拉单"> 
+                <a name="disable" value="0"/>  
+                <b name="enable" value="1"/> 
+              </钥匙在车内喇叭提醒>  
+              <紧急刹车报警控制 byte="3" startbit="0" endbit="0" param="下拉单"> 
+                <a name="disable" value="0"/>  
+                <b name="enable" value="1"/> 
+              </紧急刹车报警控制>  
+              <车速小于7千米副驾驶安全带报警控制 byte="3" startbit="1" endbit="1" param="下拉单"> 
+                <a name="disable" value="0"/>  
+                <b name="enable" value="1"/> 
+              </车速小于7千米副驾驶安全带报警控制>  
+              <车速小于7千米主驾驶安全带报警控制 byte="3" startbit="2" endbit="2" param="下拉单"> 
+                <a name="disable" value="0"/>  
+                <b name="enable" value="1"/> 
+              </车速小于7千米主驾驶安全带报警控制>  
+              <遥控解锁灯光控制 byte="4" startbit="0" endbit="0" param="下拉单"> 
+                <a name="disable" value="0"/>  
+                <b name="enable" value="1"/> 
+              </遥控解锁灯光控制> 
+            </功能配置信息>  
+            <激活紧急刹车报警减速度 type="自选项" datalength="2" control="false" service="2e,f2,03" matchState="22,F2,03"> 
+              <车速在96到160千米激活紧急刹车报警的减速度 byte="0" startbit="0" endbit="3" param="下拉单"> 
+                <a name="0.1G" value="0"/>  
+                <b name="0.15G" value="1"/>  
+                <c name="0.2G" value="2"/>  
+                <d name="0.25G" value="3"/>  
+                <e name="0.3G" value="4"/>  
+                <f name="0.35G" value="5"/>  
+                <j name="0.4G" value="6"/>  
+                <h name="0.45G" value="7"/>  
+                <i name="0.5G" value="8"/>  
+                <j name="0.55G" value="9"/>  
+                <k name="0.6G" value="10"/>  
+                <l name="0.65G" value="11"/>  
+                <m name="0.7G" value="12"/>  
+                <n name="0.75G" value="13"/>  
+                <o name="0.8G" value="14"/>  
+                <p name="0.85G" value="15"/> 
+              </车速在96到160千米激活紧急刹车报警的减速度>  
+              <车速大于160千米激活紧急刹车报警的减速度 byte="0" startbit="4" endbit="7" param="下拉单"> 
+                <a name="0.1G" value="0"/>  
+                <b name="0.15G" value="1"/>  
+                <c name="0.2G" value="2"/>  
+                <d name="0.25G" value="3"/>  
+                <e name="0.3G" value="4"/>  
+                <f name="0.35G" value="5"/>  
+                <j name="0.4G" value="6"/>  
+                <h name="0.45G" value="7"/>  
+                <i name="0.5G" value="8"/>  
+                <j name="0.55G" value="9"/>  
+                <k name="0.6G" value="10"/>  
+                <l name="0.65G" value="11"/>  
+                <m name="0.7G" value="12"/>  
+                <n name="0.75G" value="13"/>  
+                <o name="0.8G" value="14"/>  
+                <p name="0.85G" value="15"/> 
+              </车速大于160千米激活紧急刹车报警的减速度>  
+              <取消紧急刹车的加速度 byte="1" startbit="0" endbit="3" param="下拉单"> 
+                <a name="1" value="0"/>  
+                <b name="2" value="1"/>  
+                <c name="3" value="2"/>  
+                <d name="4" value="3"/>  
+                <e name="5" value="4"/>  
+                <f name="6" value="5"/>  
+                <j name="7" value="6"/>  
+                <h name="8" value="7"/>  
+                <i name="9" value="8"/>  
+                <j name="10" value="9"/>  
+                <k name="11" value="10"/>  
+                <l name="12" value="11"/>  
+                <m name="13" value="12"/>  
+                <n name="14" value="13"/>  
+                <o name="15" value="14"/>  
+                <p name="16" value="15"/> 
+              </取消紧急刹车的加速度> 
+            </激活紧急刹车报警减速度>  
+            <转向灯提醒参数 type="自选项" datalength="2" control="false" service="2e,f2,04" matchState="22,F2,04"> 
+              <寻车转向灯闪烁时长 byte="0" startbit="0" endbit="1" param="下拉单"> 
+                <a name="reserve" value="0"/>  
+                <b name="10s" value="1"/>  
+                <c name="25s" value="2"/>  
+                <d name="reserve" value="3"/> 
+              </寻车转向灯闪烁时长>  
+              <退出防盗激活转向灯闪烁次数 byte="0" startbit="2" endbit="3" param="下拉单"> 
+                <a name="reserve" value="0"/>  
+                <b name="4 times" value="1"/>  
+                <c name="reserve" value="2"/>  
+                <d name="reserve" value="3"/> 
+              </退出防盗激活转向灯闪烁次数>  
+              <电池电量低山所次数 byte="0" startbit="4" endbit="5" param="下拉单"> 
+                <a name="reserve" value="0"/>  
+                <b name="9 times" value="1"/>  
+                <c name="reserve" value="2"/>  
+                <d name="reserve" value="3"/> 
+              </电池电量低山所次数>  
+              <防盗激活转向灯闪烁次数 byte="0" startbit="4" endbit="5" param="下拉单"> 
+                <a name="reserve" value="0"/>  
+                <b name="5 min" value="1"/>  
+                <c name="reserve" value="2"/>  
+                <d name="reserve" value="3"/> 
+              </防盗激活转向灯闪烁次数> 
+            </转向灯提醒参数>  
+            <喇叭提醒参数 type="自选项" datalength="6" control="false" service="2e,f2,05" matchState="22,F2,05"> 
+              <车窗防夹喇叭提醒次数 byte="0" startbit="0" endbit="1" param="下拉单"> 
+                <a name="1 times" value="0"/>  
+                <b name="reserve" value="1"/>  
+                <c name="reserve" value="2"/>  
+                <d name="reserve" value="3"/> 
+              </车窗防夹喇叭提醒次数>  
+              <寻车喇叭提醒次数 byte="0" startbit="2" endbit="3" param="下拉单"> 
+                <a name="2 times" value="0"/>  
+                <b name="reserve" value="1"/>  
+                <c name="reserve" value="2"/>  
+                <d name="reserve" value="3"/> 
+              </寻车喇叭提醒次数>  
+              <防盗激活喇叭提醒次数 byte="0" startbit="4" endbit="5" param="下拉单"> 
+                <a name="28 times" value="0"/>  
+                <b name="reserve" value="1"/>  
+                <c name="reserve" value="2"/>  
+                <d name="reserve" value="3"/> 
+              </防盗激活喇叭提醒次数>  
+              <门开闭锁喇叭提醒次数 byte="0" startbit="6" endbit="6" param="下拉单"> 
+                <a name="1 times" value="0"/>  
+                <b name="reserve" value="1"/> 
+              </门开闭锁喇叭提醒次数>  
+              <钥匙在车内喇叭提醒次数 byte="0" startbit="7" endbit="7" param="下拉单"> 
+                <a name="1 times" value="0"/>  
+                <b name="reserve" value="1"/> 
+              </钥匙在车内喇叭提醒次数>  
+              <防夹喇叭提醒占空比 byte="1" startbit="0" endbit="3" param="下拉单"> 
+                <a name="40ms" value="0"/>  
+                <b name="20ms" value="1"/>  
+                <c name="40ms" value="2"/>  
+                <d name="60ms" value="3"/>  
+                <p name="300ms" value="15"/> 
+              </防夹喇叭提醒占空比>  
+              <防夹喇叭提醒周期 byte="1" startbit="4" endbit="7" param="下拉单"> 
+                <a name="40ms" value="0"/>  
+                <b name="40ms" value="1"/>  
+                <c name="80ms" value="2"/>  
+                <d name="120ms" value="3"/>  
+                <p name="600ms" value="15"/> 
+              </防夹喇叭提醒周期>  
+              <寻车喇叭提醒占空比 byte="2" startbit="0" endbit="3" param="下拉单"> 
+                <a name="40ms" value="0"/>  
+                <b name="40ms" value="1"/>  
+                <c name="80ms" value="2"/>  
+                <d name="120ms" value="3"/>  
+                <p name="600ms" value="15"/> 
+              </寻车喇叭提醒占空比>  
+              <寻车喇叭提醒周期 byte="2" startbit="4" endbit="7" param="下拉单"> 
+                <a name="40ms" value="0"/>  
+                <b name="100ms" value="1"/>  
+                <c name="200ms" value="2"/>  
+                <d name="300ms" value="3"/>  
+                <p name="1500ms" value="15"/> 
+              </寻车喇叭提醒周期>  
+              <防盗激活喇叭报警占空比 byte="3" startbit="0" endbit="3" param="下拉单"> 
+                <a name="250ms" value="0"/>  
+                <b name="50ms" value="1"/>  
+                <c name="100ms" value="2"/>  
+                <d name="150ms" value="3"/>  
+                <p name="750ms" value="15"/> 
+              </防盗激活喇叭报警占空比>  
+              <防盗激活喇叭报警周期 byte="3" startbit="4" endbit="7" param="下拉单"> 
+                <a name="250ms" value="0"/>  
+                <b name="100ms" value="1"/>  
+                <c name="200ms" value="2"/>  
+                <d name="300ms" value="3"/>  
+                <p name="1500ms" value="15"/> 
+              </防盗激活喇叭报警周期>  
+              <门开闭锁喇叭提醒占空比 byte="4" startbit="0" endbit="3" param="下拉单"> 
+                <a name="40ms" value="0"/>  
+                <b name="20ms" value="1"/>  
+                <c name="40ms" value="2"/>  
+                <d name="60ms" value="3"/>  
+                <p name="300ms" value="15"/> 
+              </门开闭锁喇叭提醒占空比>  
+              <寻车喇叭提醒占空比 byte="4" startbit="4" endbit="7" param="下拉单"> 
+                <a name="40ms" value="0"/>  
+                <b name="40ms" value="1"/>  
+                <c name="80ms" value="2"/>  
+                <d name="120ms" value="3"/>  
+                <p name="600ms" value="15"/> 
+              </寻车喇叭提醒占空比>  
+              <钥匙在车内喇叭提醒占空比 byte="5" startbit="0" endbit="3" param="下拉单"> 
+                <a name="40ms" value="0"/>  
+                <b name="20ms" value="1"/>  
+                <c name="40ms" value="2"/>  
+                <d name="60ms" value="3"/>  
+                <p name="300ms" value="15"/> 
+              </钥匙在车内喇叭提醒占空比>  
+              <钥匙在车内喇叭提醒周期 byte="5" startbit="4" endbit="7" param="下拉单"> 
+                <a name="40ms" value="0"/>  
+                <b name="40ms" value="1"/>  
+                <c name="80ms" value="2"/>  
+                <d name="120ms" value="3"/>  
+                <p name="600ms" value="15"/> 
+              </钥匙在车内喇叭提醒周期> 
+            </喇叭提醒参数>  
+            <蜂鸣器提醒参数 type="自选项" datalength="2" control="false" service="2e,f2,06" matchState="22,F2,06"> 
+              <门开遥控闭锁蜂鸣器提醒时长 byte="0" startbit="0" endbit="1" param="下拉单"> 
+                <a name="reserve" value="0"/>  
+                <b name="10s" value="1"/>  
+                <c name="3s" value="2"/>  
+                <d name="reserve" value="3"/> 
+              </门开遥控闭锁蜂鸣器提醒时长>  
+              <钥匙电池电量低蜂鸣器提醒时长 byte="0" startbit="2" endbit="3" param="下拉单"> 
+                <a name="reserve" value="0"/>  
+                <b name="reserve" value="1"/>  
+                <c name="reserve" value="2"/> 
+              </钥匙电池电量低蜂鸣器提醒时长> 
+            </蜂鸣器提醒参数>  
+            <CAN网络参数 type="自选项" datalength="3" control="false" service="2e,f2,07" matchState="22,F2,07"> 
+              <CAN网络架构 byte="0" startbit="0" endbit="2" param="下拉单"> 
+                <a name="reserve" value="0"/>  
+                <b name="V3" value="1"/>  
+                <c name="V4" value="2"/>  
+                <d name="reserve" value="3"/> 
+              </CAN网络架构>  
+              <CAN波特率 byte="0" startbit="3" endbit="5" param="下拉单"> 
+                <a name="reserve" value="0"/>  
+                <b name="125kBd" value="1"/>  
+                <c name="500kBd" value="2"/>  
+                <d name="reserve" value="3"/> 
+              </CAN波特率>  
+              <PEPS节点 byte="1" startbit="0" endbit="0" param="下拉单"> 
+                <a name="not receive" value="0"/>  
+                <b name="receive" value="1"/> 
+              </PEPS节点>  
+              <AC节点 byte="1" startbit="1" endbit="1" param="下拉单"> 
+                <a name="not receive" value="0"/>  
+                <b name="receive" value="1"/> 
+              </AC节点>  
+              <IP_2B0节点 byte="1" startbit="2" endbit="2" param="下拉单"> 
+                <a name="not receive" value="0"/>  
+                <b name="receive" value="1"/> 
+              </IP_2B0节点>  
+              <IP_270节点 byte="1" startbit="3" endbit="3" param="下拉单"> 
+                <a name="not receive" value="0"/>  
+                <b name="receive" value="1"/> 
+              </IP_270节点>  
+              <IP_320节点 byte="1" startbit="4" endbit="4" param="下拉单"> 
+                <a name="not receive" value="0"/>  
+                <b name="receive" value="1"/> 
+              </IP_320节点>  
+              <EMS_255节点 byte="1" startbit="5" endbit="5" param="下拉单"> 
+                <a name="not receive" value="0"/>  
+                <b name="receive" value="1"/> 
+              </EMS_255节点>  
+              <EMS_275节点 byte="1" startbit="6" endbit="6" param="下拉单"> 
+                <a name="not receive" value="0"/>  
+                <b name="receive" value="1"/> 
+              </EMS_275节点>  
+              <TCU_268节点 byte="1" startbit="7" endbit="7" param="下拉单"> 
+                <a name="not receive" value="0"/>  
+                <b name="receive" value="1"/> 
+              </TCU_268节点>  
+              <ESPorABS_218节点 byte="2" startbit="0" endbit="0" param="下拉单"> 
+                <a name="not receive" value="0"/>  
+                <b name="receive" value="1"/> 
+              </ESPorABS_218节点>  
+              <SRS_050节点 byte="2" startbit="1" endbit="1" param="下拉单"> 
+                <a name="not receive" value="0"/>  
+                <b name="receive" value="1"/> 
+              </SRS_050节点>  
+              <EPB_256节点 byte="2" startbit="2" endbit="2" param="下拉单"> 
+                <a name="not receive" value="0"/>  
+                <b name="receive" value="1"/> 
+              </EPB_256节点> 
+            </CAN网络参数> 
+          </车辆配置>  
+          <密码修改 type="密码框" service="2e,f2,13"> 
+          </密码修改> 
+        </安全操作> 
+      </防盗控制器>  
+      <电喷EMS/>  
+      <倒车雷达/>  
+      <助力转向系统/> 
+    </奔驰>  
+    <宝马/>  
+    <丰田/>  
+    <本田/>  
+    <福特/> 
+  </诊断系统>  
+  <软件升级/>  
+  <其他信息/> 
+</主界面>

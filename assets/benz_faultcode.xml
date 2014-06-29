@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<故障码>
+  <code9000 显示码="B1000" DTC含义="BCM外部晶振失效">
+    <code09 描述="BCM外部晶振失效Component Failures" 可能故障原因="BCM外部晶振故障" 维修建议="更换外部晶振"/>
+  </code9000>
+  <codeF003 显示码="U3003" DTC含义="电源电压异常">
+    <code09 描述="BCM内部元器件故障Component Failures" 可能故障原因="BCM故障" 维修建议="更换BCM"/>
+    <code17 描述="电源电压过高Circuit voltage above threshold" 可能故障原因="" 维修建议=""/>
+    <code16 描述="电源电压过低Circuit voltage below threshold" 可能故障原因="" 维修建议=""/>
+  </codeF003>
+  <code9020 显示码="B1020" DTC含义="左转向灯线路故障Lamp Turn Signal Left Circuit Failure">
+    <code11 描述="线路对地短路Circuit short to ground" 可能故障原因="左转向灯线路短路Circuit short to ground" 维修建议="检查左转向灯线路Check Lamp Turn Left Circuit"/>
+    <code13 描述="线路开路Circuit open" 可能故障原因="左转向灯线路开路Circuit open" 维修建议="检查左转向灯线路Check Lamp Turn Left Circuit"/>
+  </code9020>
+  <code9021 显示码="B1021" DTC含义="右转向灯线路故障Lamp Turn Signal Right Circuit Failure">
+    <code11 描述="线路对地短路Circuit short to ground" 可能故障原因="右转向灯线路短路Circuit short to ground" 维修建议="检查右转向灯线路Check Lamp Turn Left Circuit"/>
+    <code13 描述="线路开路Circuit open" 可能故障原因="右转向灯线路开路Circuit open" 维修建议="检查右转向灯线路Check Lamp Turn Left Circuit"/>
+  </code9021>
+  <code9022 显示码="B1022" DTC含义="顶灯输出线路故障Lamp Dimming Output Circuit Short to ground">
+    <code11 描述="线路对地短路Circuit short to ground" 可能故障原因="顶灯线路对电源短路Circuit short to ground" 维修建议="检查顶灯线路Check Dome Lamp Left Circuit"/>
+  </code9022>
+  <code9023 显示码="B1023" DTC含义="节电输出线路故障Battery Saver Circuit Failure">
+    <code12 描述="线路对电源短路Circuit short to battery" 可能故障原因="节电输出对电源短路Circuit short to Battrry" 维修建议="检查节电继电器控制端线路及线包Check Battery Saver Relay "/>
+    <code14 描述="线路对地短路或开路Circuit short to ground or open" 可能故障原因="节电输出对地短路Circuit short to grond" 维修建议="检查节电继电器控制端线路及线包Check Battery Saver Relay "/>
+  </code9023>
+  <code9024 显示码="B1024" DTC含义="后雾灯线路故障Rear Fog Circuit Failure">
+    <code12 描述="线路对电源短路Circuit short to battery" 可能故障原因="后雾灯输出线路对电源短路Circuit short to battery" 维修建议="检查后雾灯线路check Rear Fog circuit"/>
+    <code14 描述="线路对地短路或开路Circuit short to ground or open" 可能故障原因="后雾灯输出线路对地短路Circuit short to grond" 维修建议="检查后雾灯线路check Rear Fog circuit"/>
+  </code9024>
+  <code9040 显示码="B1040" DTC含义="电动闭锁线路故障Power Door Lock Circuit Failure">
+    <code12 描述="线路对电源短路Circuit short to battery" 可能故障原因="电动闭锁输出线路对电源短路Circuit short to Battery" 维修建议="检查闭锁输出线路check lock circuit"/>
+    <code14 描述="线路对地短路或开路Circuit short to ground or open" 可能故障原因="电动闭锁输出线路对地短路Circuit short to grond" 维修建议="检查闭锁输出线路check lock circuit"/>
+  </code9040>
+  <code9041 显示码="B1041" DTC含义="左前门解锁线路故障LF Door Unlock Circuit Failure">
+    <code12 描述="线路对电源短路Circuit short to battery" 可能故障原因="左前门解锁输出线路对电源短路Circuit short to Battrry" 维修建议="检查左前门解锁输出线路check LF Door Unlock circuit"/>
+    <code14 描述="线路对地短路或开路Circuit short to ground or open" 可能故障原因="左前门解锁输出线路对地短路Circuit short to grond" 维修建议="检查左前门解锁输出线路check LF Door Unlock circuit"/>
+  </code9041>
+  <code9042 显示码="B1042" DTC含义="电动解锁线路故障Power Door Unlock Circuit Failure">
+    <code12 描述="线路对电源短路Circuit short to battery" 可能故障原因="电动解锁输出线路对电源短路Circuit short to Battrry" 维修建议="检查解锁输出线路check Unlock circuit"/>
+    <code14 描述="线路对地短路或开路Circuit short to ground or open" 可能故障原因="电动解锁输出线路对地短路Circuit short to grond or open" 维修建议="检查解锁输出线路check Unlock circuit"/>
+  </code9042>
+  <code9043 显示码="B1043" DTC含义="行李箱解锁线路故障Trunk Unlock Circuit Failure">
+    <code12 描述="线路对电源短路Circuit short to battery" 可能故障原因="行李箱解锁输出线路对电源短路Circuit short to Battrry" 维修建议="检查行李箱解锁输出线路check Trunk Unlock circuit"/>
+    <code14 描述="线路对地短路或开路Circuit short to ground or open" 可能故障原因="行李箱解锁输出线路对地短路Circuit short to grond" 维修建议="检查行李箱解锁输出线路check Trunk Unlock circuit"/>
+  </code9043>
+  <code9044 显示码="B1044" DTC含义="门锁状态信号故障Door lock state Feedback signal Failure ">
+    <code24 描述="门锁解锁状态信号故障Signal stuck High" 可能故障原因="门锁故障或门锁状态线路故障" 维修建议="更换门锁或检查门锁状态线路"/>
+    <code23 描述="门锁闭锁状态信号故障Signal stuck low" 可能故障原因="门锁故障或门锁状态线路故障" 维修建议="更换门锁或检查门锁状态线路"/>
+  </code9044>
+  <code9050 显示码="B1050" DTC含义="喇叭线路短路Horn Circuit Failure">
+    <code12 描述="线路对电源短路Circuit short to battery" 可能故障原因="喇叭输出线路对电源短路Circuit short to Battery" 维修建议="检查喇叭线路check Horn circuit"/>
+    <code14 描述="线路对地短路或开路Circuit short to ground or open" 可能故障原因="喇叭输出线路对地短路Circuit short to grond or open" 维修建议="检查喇叭线路check Horn circuit"/>
+  </code9050>
+  <code9060 显示码="B1060" DTC含义="前雨刮低速档故障Front Wiper Low Speed Park Failure">
+    <code12 描述="线路对电源短路Circuit short to battery" 可能故障原因="前雨刮低速输出线路对电源短路" 维修建议="检查前雨刮线路和前雨刮"/>
+    <code14 描述="线路对地短路或开路Circuit short to ground or open" 可能故障原因="前雨刮低速输出线路对地短路" 维修建议="检查前雨刮线路和前雨刮"/>
+  </code9060>
+  <code9061 显示码="B1061" DTC含义="前雨刮高速档故障Front Wiper High Speed Park Failure">
+    <code12 描述="线路对电源短路Circuit short to battery" 可能故障原因="前雨刮高速输出线路对电源短路" 维修建议="检查前雨刮线路和前雨刮"/>
+    <code14 描述="线路对地短路或开路Circuit short to ground or open" 可能故障原因="前雨刮高速输出线路对地短路" 维修建议="检查前雨刮线路和前雨刮"/>
+  </code9061>
+  <code9062 显示码="B1062" DTC含义="前雨刮回位传感器故障Front Wiper Park Switch Circuit Fail">
+    <code15 描述="线路对电源短路或开路Circuit short to battery or open" 可能故障原因="前雨刮回位开关失效" 维修建议="检查前雨刮"/>
+  </code9062>
+  <code9063 显示码="B1063" DTC含义="后雨刮回位开关故障Rear Wiper Park Switch Circuit Fail">
+    <code15 描述="线路对电源短路或开路Circuit short to battery or open" 可能故障原因="后雨刮回位开关失效" 维修建议="检查后雨刮开关及线路"/>
+  </code9063>
+  <code9064 显示码="B1064" DTC含义="前雨刮间歇电阻故障Front Wiper Intermit Resistance Error">
+    <code09 描述="器件故障Component Failures" 可能故障原因="前雨刮间歇电阻老化" 维修建议="检查前雨刮组合开关更换前雨刮间歇电阻"/>
+  </code9064>
+  <code9065 显示码="B1065" DTC含义="前雨刮间歇开关故障Front Wiper interval Switch Failure">
+    <code12 描述="线路对电源短路Circuit short to battery" 可能故障原因="前雨刮间歇开关失效" 维修建议="检查前雨刮开关及线路"/>
+    <code14 描述="线路对地短路或开路Circuit short to ground or open" 可能故障原因="前雨刮间歇开关失效" 维修建议="检查前雨刮开关及线路"/>
+  </code9065>
+  <code9066 显示码="B1066" DTC含义="前洗涤开关故障Front Wiper Wash Switch Failure">
+    <code12 描述="线路对电源短路Circuit short to battery" 可能故障原因="前洗涤开关失效" 维修建议="检查前洗涤开关及线路"/>
+    <code14 描述="线路对地短路或开路Circuit short to ground or open" 可能故障原因="前洗涤开关失效" 维修建议="检查前洗涤开关及线路"/>
+  </code9066>
+  <code9067 显示码="B1067" DTC含义="前雨刮低速档开关故障Switch of Front Wiper Low Speed Failure">
+    <code12 描述="线路对电源短路Circuit short to battery" 可能故障原因="前雨刮低速档开关失效" 维修建议="检查前雨刮开关及线路"/>
+    <code14 描述="线路对地短路或开路Circuit short to ground or open" 可能故障原因="前雨刮低速档开关失效" 维修建议="检查前雨刮开关及线路"/>
+  </code9067>
+  <code9068 显示码="B1068" DTC含义="前雨刮高速档开关故障Switch of Front Wiper High Speed Failure">
+    <code12 描述="线路对电源短路Circuit short to battery" 可能故障原因="前雨刮高速档开关失效" 维修建议="检查前雨刮开关及线路"/>
+    <code14 描述="线路对地短路或开路Circuit short to ground or open" 可能故障原因="前雨刮高速档开关失效" 维修建议=""/>
+  </code9068>
+  <code9069 显示码="B1069" DTC含义="后雨刮间歇档对地短路或开路Rear Wiper interval Switch Failure">
+    <code12 描述="线路对电源短路Circuit short to battery" 可能故障原因="后雨刮间歇开关失效" 维修建议="检查后雨刮开关及线路"/>
+    <code14 描述="线路对地短路或开路Circuit short to ground or open" 可能故障原因="后雨刮间歇开关失效" 维修建议="检查后雨刮开关及线路"/>
+  </code9069>
+  <code906A 显示码="B106A" DTC含义="后洗涤开关对地短路或开路Rear Wiper Wash Switch Failure">
+    <code12 描述="线路对电源短路Circuit short to battery" 可能故障原因="后洗涤开关失效" 维修建议="检查后洗涤开关及线路"/>
+    <code14 描述="线路对地短路或开路Circuit short to ground or open" 可能故障原因="后洗涤开关失效" 维修建议="检查后洗涤开关及线路"/>
+  </code906A>
+  <code9070 显示码="B1070" DTC含义="左前门开关故障LF Door Ajar Failure">
+    <code15 描述="线路对电源短路或开路Circuit short to battery or open" 可能故障原因="左前门线路对地短路" 维修建议="检查左前门开关线路"/>
+    <code11 描述="线路对地短路Circuit short to ground" 可能故障原因="左前门线路对地短路" 维修建议="检查左前门开关线路"/>
+  </code9070>
+  <code9071 显示码="B1071" DTC含义="左后门开关故障LR Door Ajar Failure">
+    <code15 描述="线路对电源短路或开路Circuit short to battery or open" 可能故障原因="左后门线路对地短路" 维修建议="检查左后门开关线路"/>
+    <code11 描述="线路对地短路Circuit short to ground" 可能故障原因="左后门线路对地短路" 维修建议="检查左后门开关线路"/>
+  </code9071>
+  <code9072 显示码="B1072" DTC含义="右前门开关故障RF Door Ajar Failure">
+    <code15 描述="线路对电源短路或开路Circuit short to battery or open" 可能故障原因="右前门线路对地短路" 维修建议="检查右前门开关线路"/>
+    <code11 描述="线路对地短路Circuit short to ground" 可能故障原因="右前门线路对地短路" 维修建议="检查右前门开关线路"/>
+  </code9072>
+  <code9073 显示码="B1073" DTC含义="右后门开关故障RR Door Ajar Failure">
+    <code15 描述="线路对电源短路或开路Circuit short to battery or open" 可能故障原因="右后门线路对地短路" 维修建议="检查右后门开关线路"/>
+    <code11 描述="线路对地短路Circuit short to ground" 可能故障原因="右后门线路对地短路" 维修建议="检查右后门开关线路"/>
+  </code9073>
+  <code9074 显示码="B1074" DTC含义="行李箱门开关故障Trunk Door Ajar Failure">
+    <code15 描述="线路对电源短路或开路Circuit short to battery or open" 可能故障原因="行李箱门线路对地短路" 维修建议="检查行李箱门开关线路"/>
+    <code11 描述="线路对地短路Circuit short to ground" 可能故障原因="行李箱门线路对地短路" 维修建议="检查行李箱门开关线路"/>
+  </code9074>
+  <code9075 显示码="B1075" DTC含义="行李箱释放开关故障Trunk Release Switch Failure">
+    <code15 描述="线路对电源短路或开路Circuit short to battery or open" 可能故障原因="行李箱释放开关对电源短路或开路" 维修建议="检查行李箱释放开关线路"/>
+    <code11 描述="线路对地短路Circuit short to ground" 可能故障原因="行李箱释放开关线路对地短路" 维修建议="检查行李箱释放开关线路"/>
+  </code9075>
+  <code9076 显示码="B1076" DTC含义="右转向开关故障Ritht turn switch Failure">
+    <code15 描述="线路对电源短路或开路Circuit short to battery or open" 可能故障原因="右转向开关线路对电源短路或开路" 维修建议="检查右转向开关线路"/>
+    <code11 描述="线路对地短路Circuit short to ground" 可能故障原因="右转向开关线路对地短路" 维修建议="检查右转向开关线路"/>
+  </code9076>
+  <code9077 显示码="B1077" DTC含义="左转向开关故障Left turn switch Failure">
+    <code15 描述="线路对电源短路或开路Circuit short to battery or open" 可能故障原因="左转向开关线路对电源短路或开路" 维修建议="检查左转向开关线路"/>
+    <code11 描述="线路对地短路Circuit short to ground" 可能故障原因="左转向开关线路对地短路" 维修建议="检查左转向开关线路"/>
+  </code9077>
+  <code9078 显示码="B1078" DTC含义="位置灯开关故障Postion Lamp Switch Failure">
+    <code15 描述="线路对电源短路或开路Circuit short to battery or open" 可能故障原因="位置灯开关线路对地短路" 维修建议="检查位置灯开关线路"/>
+    <code11 描述="线路对地短路Circuit short to ground" 可能故障原因="位置灯开关线路对电源短路或开路" 维修建议="检查位置灯开关线路"/>
+  </code9078>
+  <code9079 显示码="B1079" DTC含义="近光灯开关故障High Lamp Switch Failure">
+    <code15 描述="线路对电源短路或开路Circuit short to battery or open" 可能故障原因="近光灯开关线路对电源短路或开路" 维修建议="检查近光灯开关线路"/>
+    <code11 描述="线路对地短路Circuit short to ground" 可能故障原因="近光灯开关线路对地短路" 维修建议="检查近光灯开关线路"/>
+  </code9079>
+  <code907A 显示码="B107A" DTC含义="自动灯光开关故障Auto Lamp Switch Failure">
+    <code15 描述="线路对电源短路或开路Circuit short to battery or open" 可能故障原因="自动灯光开关线路对电源短路或开路" 维修建议="检查自动灯光开关线路"/>
+    <code11 描述="线路对地短路Circuit short to ground" 可能故障原因="自动灯光开关线路对地短路" 维修建议="检查自动灯光开关线路"/>
+  </code907A>
+  <code907B 显示码="B107B" DTC含义="前雾灯开关故障Front Fog Switch Failure">
+    <code15 描述="线路对电源短路或开路Circuit short to battery or open" 可能故障原因="前雾灯开关线路对电源短路或开路" 维修建议="检查前雾灯开关线路"/>
+    <code11 描述="线路对地短路Circuit short to ground" 可能故障原因="前雾灯开关线路对地短路" 维修建议="检查前雾灯开关线路"/>
+  </code907B>
+  <code907C 显示码="B107C" DTC含义="后雾灯开关对地短路Rear Fog Switch Failure">
+    <code15 描述="线路对电源短路或开路Circuit short to battery or open" 可能故障原因="后雾灯开关线路对电源短路或开路" 维修建议="检查后雾灯开关线路"/>
+    <code11 描述="线路对地短路Circuit short to ground" 可能故障原因="后雾灯开关线路对地短路" 维修建议="检查后雾灯开关线路"/>
+  </code907C>
+  <code907D 显示码="B107D" DTC含义="远光灯开关对地短路HighBeam Switch Failure">
+    <code15 描述="线路对电源短路或开路Circuit short to battery or open" 可能故障原因="远光灯开关线路对电源短路或开路" 维修建议="检查远光灯开关线路"/>
+    <code11 描述="线路对地短路Circuit short to ground" 可能故障原因="远光灯开关线路对地短路" 维修建议="检查远光灯开关线路"/>
+  </code907D>
+  <code907E 显示码="B107E" DTC含义="超车灯开关对地短路Overtake light Switch Failure">
+    <code15 描述="线路对电源短路或开路Circuit short to battery or open" 可能故障原因="超车灯开关线路对电源短路或开路" 维修建议="检查超车灯开关线路"/>
+    <code11 描述="线路对地短路Circuit short to ground" 可能故障原因="超车灯开关线路对地短路" 维修建议="检查超车灯开关线路"/>
+  </code907E>
+  <code907F 显示码="B107F" DTC含义="大灯清洗开关对地短路Lamp Wash Switch Failure">
+    <code15 描述="线路对电源短路或开路Circuit short to battery or open" 可能故障原因="大灯清洗开关线路对电源短路或开路" 维修建议="检查大灯清洗开关线路"/>
+    <code11 描述="线路对地短路Circuit short to ground" 可能故障原因="大灯清洗开关线路对地短路" 维修建议="检查大灯清洗开关线路"/>
+  </code907F>
+  <code9080 显示码="B1080" DTC含义="紧急报警开关对地短路Hazard Warning Switch Failure">
+    <code15 描述="线路对电源短路或开路Circuit short to battery or open" 可能故障原因="紧急报警开关线路对电源短路或开路" 维修建议="检查紧急报警开关线路"/>
+    <code11 描述="线路对地短路Circuit short to ground" 可能故障原因="紧急报警开关线路对地短路" 维修建议="检查紧急报警开关线路"/>
+  </code9080>
+  <code9090 显示码="B1090" DTC含义="后除霜开关对地短路Rear Defroster Switch Failure">
+    <code15 描述="线路对电源短路或开路Circuit short to battery or open" 可能故障原因="后除霜开关线路对电源短路或开路" 维修建议="检查后除霜开关线路"/>
+    <code11 描述="线路对地短路Circuit short to ground" 可能故障原因="后除霜开关线路对地短路" 维修建议="检查后除霜开关线路"/>
+  </code9090>
+  <code9091 显示码="B1091" DTC含义="喇叭开关对地短路Horn Switch Failure">
+    <code15 描述="线路对电源短路或开路Circuit short to battery or open" 可能故障原因="喇叭开关线路对电源短路或开路" 维修建议="检查喇叭开关线路"/>
+    <code11 描述="线路对地短路Circuit short to ground" 可能故障原因="喇叭开关线路对地短路" 维修建议="检查喇叭开关线路"/>
+  </code9091>
+  <codeC073 显示码="U0073" DTC含义="BCM所在网络总线关闭Bus off">
+    <code88 描述="总线关闭Bus off" 可能故障原因="" 维修建议="检查CAN总线"/>
+  </codeC073>
+  <codeC146 显示码="U0146" DTC含义="网关丢失Lost Communication With Gateway &quot;A&quot;">
+    <code87 描述="网关丢失missing message" 可能故障原因="网关丢失missing message" 维修建议="检查CAN总线和网关"/>
+  </codeC146>
+  <codeC155 显示码="U0155" DTC含义="仪表节点丢失Lost Communication With Instrument Panel Cluster (IPC) Control Module">
+    <code87 描述="节点丢失missing message" 可能故障原因="仪表丢失IP missing" 维修建议="检查仪表和CAN总线Check IP"/>
+  </codeC155>
+  <codeC168 显示码="U0168" DTC含义="PEPS节点丢失Lost Communication With Vehicle Security Control Module">
+    <code87 描述="节电丢失missing message" 可能故障原因="PEPS丢失IP missing" 维修建议="检查PEPS和CAN总线Check PEPS"/>
+  </codeC168>
+  <codeC164 显示码="U0164" DTC含义="空调控制器节点丢失Lost Communication With HVAC Control Module">
+    <code87 描述="节电丢失missing message" 可能故障原因="AC丢失IP missing" 维修建议="检查空调控制器和CAN总线Check AC"/>
+  </codeC164>
+  <codeC101 显示码="U0101" DTC含义="TCU_ID268报文超时Lost Communication with TCM">
+    <code87 描述="报文超时missing message" 可能故障原因="TCU丢失" 维修建议="检查TCU和CAN总线"/>
+  </codeC101>
+  <codeC100 显示码="U0100" DTC含义="EMS_ID255报文超时Lost Communication With ECM/PCM &quot;A&quot;">
+    <code87 描述="报文超时missing message" 可能故障原因="EMS丢失EMS missing" 维修建议="检查EMS和CAN总线Check EMS"/>
+  </codeC100>
+  <codeC122 显示码="U0122" DTC含义="ESP_ID218报文超时Lost Communication With Vehicle Dynamics Control Module">
+    <code87 描述="报文超时missing message" 可能故障原因="ESP丢失ESP missing" 维修建议="检查ESP和CAN总线Check ESP"/>
+  </codeC122>
+  <codeC126 显示码="U0126" DTC含义="SAS节点丢失Lost Communication With Steering Angle Sensor Module">
+    <code87 描述="节点丢失missing message" 可能故障原因="SAS丢失SAS missing" 维修建议="检查SAS和CAN总线Check SAS"/>
+  </codeC126>
+  <codeC151 显示码="U0151" DTC含义="SRS节点丢失Lost Communication With Restraints Control Module">
+    <code87 描述="节点丢失missing message" 可能故障原因="SRS丢失SRS missing" 维修建议="检查SRS和CAN总线Check SRS"/>
+  </codeC151>
+  <codeC129 显示码="U0129" DTC含义="EPB节点丢失Lost Communication With Brake System Control Module">
+    <code87 描述="节点丢失missing message" 可能故障原因="EPB丢失EPB missing" 维修建议="检查EPB和CAN总线Check EPB"/>
+  </codeC129>
+  <codeC199 显示码="U0199" DTC含义="与主驾门模块失去通信Lost Communication With “Door Control Module A”">
+    <code87 描述="LIN报文丢失missing message" 可能故障原因="主驾门模块丢失DDCU missing" 维修建议="检查主驾门模块和LIN总线Check DDCU"/>
+  </codeC199>
+</故障码>
